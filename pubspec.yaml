@@ -31,6 +31,9 @@ dependencies:
   credit_card_input_form: any
   webview_flutter: ^2.0.12
 
+  http: ^0.13.3
+  stripe_payment: ^1.1.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

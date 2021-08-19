@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'firstscreen.dart';
 import 'package:flutter/cupertino.dart';
+import 'home.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -53,7 +55,8 @@ class _MyGridScreenState extends State<MyGridScreen> {
                 onTap: () {
                   print("Tapped on container");
                   Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => NewScreen()));
+                     // MaterialPageRoute(builder: (context) => NewScreen()));
+                      MaterialPageRoute(builder: (context) => PaymentScreen()));
                   // Navigator.push(
                   // context,
                   // MaterialPageRoute(builder: (context) => SecondRoute()),

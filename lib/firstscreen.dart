@@ -36,6 +36,24 @@ class NewScreen extends StatelessWidget {
         ),
 
       ),
+    bottomNavigationBar: BottomNavigationBar(
+    currentIndex: 0, // this will be set when a new tab is tapped
+    items: [
+    BottomNavigationBarItem(
+    icon: new Icon(Icons.home),
+    title: new Text('Home'),
+    ),
+    BottomNavigationBarItem(
+    icon: new Icon(Icons.mail),
+    title: new Text('live'),
+    ),
+    BottomNavigationBarItem(
+    icon: Icon(Icons.person),
+    title: Text('calender')
+    )
+    ],
+    ),
     );
+
   }
 }
