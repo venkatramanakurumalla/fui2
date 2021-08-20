@@ -23,7 +23,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
   void payNow1() async {
     //the amount must be transformed to cents
     var response =
-    await StripeServices.payNowHandler(amount: '100', currency: 'USD');
+    await StripeServices.payNowHandler(amount: '10011', currency: 'USD');
     print('response message ${response.message}');
   }
 
@@ -33,7 +33,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
       body: Center(
           child: TextButton(
             onPressed: () {
-              payNow();
+              payNow1();
             },
             child:Image.asset('images/images.jpg'),
 
